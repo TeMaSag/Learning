@@ -1,0 +1,12 @@
+<appHeader></appHeader>
+        <div id="wrapper" :class="{ active: flagClassActive }">
+          <navbar v-on:button-click="onButtonClick"></navbar>
+            <div class="fon">   
+              <div class="body">                             
+                  <transition name='fade' >
+                      <router-view></router-view>
+                  </transition>
+              </div>
+          </div>
+        </div>
+      <!-- <div class="footer"></div>   -->
